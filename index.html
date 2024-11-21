@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | La Desaparicion de Kagayaki</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/script.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse navbar-principal">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav nav-links">
+                    <li><a href="#comenzar">Comenzar</a></li>
+                    <li><a href="#puntajes">Puntajes</a></li>
+                    <li id="link-login"><a href="#login">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        <a href="#" class="ir-arriba">
+            <img src="./multimedia/up-arrow_icon.png" alt="">
+        </a>
+    </header>
+    <main>
+        <div class="container-main">
+            <div class="container-img-principal" >
+                <picture>
+                    <source srcset="./multimedia/principal.png" media="(max-width: 1024px)">
+                    <source srcset="./multimedia/principal_degrad_2.png">      
+                    <img src="./multimedia/principal_degrad_2.png" alt="" >              
+                </picture>
+            </div>
+            <div class="container-inicio">
+                <div class="container-logo">
+                    <img src="./multimedia/logo_index.png" id="comenzar" alt="">
+                </div>
+                <div class="container-sinopsis">
+                    <p>En las tranquilas colinas de Kioto, se encuentra Ura Senke, una prestigiosa escuela donde
+                        se enseña el
+                        arte de la ceremonia del té. Su bol de té más preciado, el Kagayaki, ha desaparecido.
+                        Como aprendiz
+                        entusiasta, decides ayudar a resolver el misterio. Tus elecciones determinarán si
+                        recuperas el bol,
+                        desentrañas los secretos de los sospechosos... o fallas en tu misión.</p>
+                    <p>
+                </div>
+                <div class="container-play">
+                    <a href="./librojuego.html">Comenzar Aventura!</a>
+                </div>
+            </div>
+
+            <div class="container-puntaje" id="puntajes">
+                <div class="container-titulo-puntajes">
+                    <h2>Puntajes Historicos</h2>
+                </div>
+                <div class="container-tabla">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Puntaje</th>
+                                <th>Pais</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Paul</td>
+                                <td>800</td>
+                                <td>U.S.A</td>
+                            </tr>
+                            <tr>
+                                <td>Alejandro</td>
+                                <td>700</td>
+                                <td>Argentina</td>
+                            </tr>
+                            <tr>
+                                <td>Josefina</td>
+                                <td>560</td>
+                                <td>Chile</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="container-login" id="login">
+                <div class="container-titulo-login">
+                    <h2>Iniciar Sesión</h2>
+                </div>
+                <div class="container-formulario">
+                    <form id="loginForm">
+                        <label for="username">Usuario: </label>
+                        <input type="text" id="username" placeholder="Nombre de usuario" required><br>
+                        <label for="password">Contraseña: </label>
+                        <input type="password" id="password" placeholder="Contraseña" required><br>
+                        <input type="submit" value="Ingresar">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <hr>
+    <footer>
+        <p>Creado por Gabriel Donato Martinez Condori para Taller de Lenguajes de Marcado y Tecnologías Web - Comision
+            01</p>
+    </footer>
+    <script>
+        obtenerUsuarioDeLoginForm()
+    </script>
+</body>
+
+</html>

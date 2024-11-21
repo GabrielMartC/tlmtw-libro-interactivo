@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cap 5 | La Desaparicion de Kagayaki</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <script src="./js/script.js"></script>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">    
+
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-inverse navbar-principal">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav nav-links">
+                        <li><a href="index.html#comenzar">Comenzar</a></li>
+                        <li><a href="index.html#puntajes">Puntajes</a></li>
+                        <li id="link-login"><a href="index.html#login">Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="#" class="ir-arriba">
+                <img src="./multimedia/up-arrow_icon.png" alt="">
+            </a>
+        </header>
+        <main>
+            <div class="container-capitulos">
+                <section class="capitulo">
+                    <h1 class="titulo-capitulos">LA DESAPARICIÓN  DE KAGAYAKI</h1>
+                    <h2 class="subtitulo-capitulos">Capitulo 5</h2>
+    
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="container-imagen-cap col-lg-6 p-3">
+                                <img class="img-fluid" src="./multimedia/paraCap5.png" alt="">
+                            </div>
+                            <div class="container-texto-cap col-lg-6 p-3 ">
+                                <p>Decides que lo mejor es actuar y confrontar a Kenji Mori y a las personas que lo acompañan. Salir de tu escondite podría ser arriesgado, pero sientes que el Kagayaki no puede seguir en manos de esas personas.</p>
+                                <p>Con determinación, te levantas de tu escondite y caminas hacia el mostrador, donde ocurre la negociación. En el momento en que los ves, te detienes, pero te obligas a seguir adelante.</p>
+                                <p>"¡Kenji!" gritas con firmeza, tomando a todos por sorpresa. "¡Devuelve ese bol, ahora!"</p>
+                                <p>Son tres hombres, se giran rápidamente observando con sus ojos fríos como el hielo la situacion. Kenji parece aterrorizado. “¿Qué estás haciendo? ¡Vete de aquí!” responde, pero su voz tiembla al intentar ocultar el miedo.</p>
+                                <p>Uno de los hombres es alto y robusto con un tatuaje de dragón que cubre su brazo; llevan trajes, no hay ninguna duda, se tratan de Yakuzas. Uno de ellos da un paso hacia ti. "¿Crees que puedes interrumpir nuestras negociaciones así como así, niño?".</p>
+                                <p>Permaneces inmovil, "¿Sabes lo que pasa con las personas que interfieren en nuestros negocios?" pregunta, acercándose aún más. Sin esperar respuesta, hace una señal con la mano. Uno de los hombres más cercanos a él se mueve rápidamente hacia ti.</p>
+                                <p>El alto se para detrás de ti, y te sostiene evitando toda posibilidad de escape. 
+                                    Saca un pañuelo el cual lo envuelve en tu cuello para estrangularte; los últimos segundos de tu vida están contados, nadie vuelve a saber de ti.
+                                </p>
+                                <h2 class="subtitulo-fin">Fin</h2>
+                            </div>
+                        </div>
+                    </div>                    
+                </section>
+                
+                <!-- Formulario -->
+                <section class="container-form-fin container">
+                    <h3 class="subtitulo-puntaje">Registro de Puntaje</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" >
+                        </div>
+                        <div class="form-group">
+                            <label for="pais">País</label>
+                            <select id="pais" class="form-select">
+                                <option value="Argentina">Argentina</option>
+                                <option value="U.S.A">U.S.A</option>
+                                <option value="Chile">Chile</option>
+                                <option value="Ecuador">Ecuador</option>
+                                <option value="Francia">Francia</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" >
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" onclick="enviarDatosFormulario()">Enviar</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+        <hr>
+        <footer>
+            <p>Creado por Gabriel Donato Martinez Condori para Taller de Lenguajes de Marcado y Tecnologías Web - Comision 01</p>
+        </footer>
+    </body>
+</html>

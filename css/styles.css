@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{ 
+    font-family: 'ITCBenguiatStdMediumCn';
+    src: url('../fonts/ITCBenguiatStdMediumCn.woff2') format('woff2'),
+        url('../fonts/ITCBenguiatStdMediumCn.woff') format('woff'),
+        url('../fonts/ITCBenguiatStdMediumCn.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'ITCBenguiatStdBoldCn';
+    src: url('../fonts/ITCBenguiatStdBoldCn.otf') format('opentype');
+}
+
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 100 to 900 */
+.lexend-font{
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(252, 254, 251);
+}
+
+/* navbar estilos */
+.navbar-principal {
+    display: flex !important;
+    justify-content: flex-start;
+    margin: 0 !important; 
+    padding: 0 !important; 
+    border: none;
+    background-color: rgb(243, 99, 99) !important;
+
+}
+
+.navbar-principal .nav-links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 30px;
+    margin: 0 !important;
+    padding: 0px 20px !important; 
+    width: 100%;
+}
+
+.navbar-principal .nav-links li {
+    display: flex;
+    margin: 0;
+}
+
+#link-login {
+    margin-left: auto;
+}
+
+.navbar-principal .nav-links a {
+    text-decoration: none !important;
+    margin: 0;
+    font-size: larger;
+    color: white !important;
+    padding: 10px 15px;
+    font-family: 'ITCBenguiatStdBoldCn',Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.ir-arriba {
+    margin: 0;
+    padding: 0; 
+}
+
+.ir-arriba img {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    width: 60px; 
+}
+  
+
+/* main grid */
+.container-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 25px 15px; 
+    grid-template-areas:
+        "container-img-principal container-inicio"
+        "container-puntaje container-puntaje"
+        "container-login container-login";
+    padding: 20px;
+}
+
+/* seccion img principal */
+.container-img-principal {
+    grid-area: container-img-principal;
+
+}
+
+.container-img-principal img{
+    border-radius: 10px 0 0 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* seccion inicio */
+.container-inicio {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    grid-area: container-inicio;
+    align-items: center;
+    text-align: center;
+}
+
+.container-logo img {
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.container-sinopsis p{
+    font-family: 'Lexend',Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+
+.container-play a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(243, 99, 99);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'ITCBenguiatStdBoldCn',Arial, Helvetica, sans-serif;
+}
+
+/* seccion puntaje */
+.container-puntaje {
+    grid-area: container-puntaje;
+    text-align: center;
+    background-color: #F5F5F5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container-puntaje h2 {
+    margin-bottom: 15px;
+    color: #000000;
+    font-family: 'ITCBenguiatStdBoldCn',Arial, Helvetica, sans-serif;
+}
+
+.container-tabla table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.container-tabla th, .container-tabla td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    font-family: 'Lexend',Arial, Helvetica, sans-serif;
+}
+
+/* seccion login */
+.container-login {
+    grid-area: container-login;
+    background-color: #F5F5F5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container-login h2 {
+    margin-bottom: 15px;
+    color: black;
+    font-family: 'ITCBenguiatStdBoldCn',Arial, Helvetica, sans-serif;
+}
+
+.container-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container-formulario label{
+    font-family: 'Lexend',Arial, Helvetica, sans-serif;
+}
+
+.container-formulario input[type="text"], .container-formulario input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-family: 'Lexend',Arial, Helvetica, sans-serif;
+}
+
+.container-formulario input[type="submit"] {
+    padding: 10px;
+    background-color: rgb(243, 99, 99);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'ITCBenguiatStdBoldCn',Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+#loginForm input#username, input#password{
+    margin-bottom: 15px;
+}
+
+.container-formulario input[type="submit"]:hover, .nav-links li:hover, .container-play a:hover{
+    background-color: #e71829;
+}
+
+/* footer estilos */
+footer{
+    text-align: center;
+    padding: 30px;
+    margin-top: 10px;
+}
+
+footer p{
+    font-size: medium;
+}
+
+
+
+
+/*------------------------------------ estilos para admin.html ---------------------------------------------------------*/
+#main-admin{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#mensaje-bienvenida{
+    font-family: 'ITCBenguiatStdBoldCn',Arial, Helvetica, sans-serif;
+    margin: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+
+#abm{
+    background-color: #F5F5F5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container-agregar-cap{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.container-agregar-cap p{
+    margin: 0;
+    padding: 0;
+}
+
+.abm-icons{
+    height: 30px;
+}
+
+
+
+
+/* ---------------------------------------estilos para capitulos ----------------------------------------------------------*/
+.row {
+    display: flex; 
+    align-items: stretch; 
+}
+
+.container-imagen-cap, .container-texto-cap {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    height: auto; 
+}
+
+.img-fluid {
+    max-width: 100%; 
+    height: auto;  
+    border-radius: 15px; 
+}
+
+.container-capitulos{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+    
+}
+
+.titulo-capitulos, .subtitulo-capitulos, .subtitulo-fin, .subtitulo-puntaje{
+    font-family: 'ITCBenguiatStdBoldCn',Arial, Helvetica, sans-serif;
+    text-align: center;
+} 
+
+.container-texto-cap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-texto-cap p{
+    font-family: 'Lexend',Arial, Helvetica, sans-serif;
+    font-size: large;
+    margin-bottom: 8px;
+}
+
+
+.container-texto-cap ul{
+    font-family: 'Lexend',Arial, Helvetica, sans-serif;
+    font-size: large;
+    list-style: disc;
+}
+
+.capitulo-opciones p{
+    font-family: 'Lexend',Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-align: center;
+}
+
+.capitulo-opciones{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+}
+
+.nav-item{
+    padding-bottom: 10px;
+}
+
+.opciones-items{
+    background-color: rgb(243, 99, 99) !important;
+    text-align: center;
+    color: rgb(255, 255, 255) !important;
+    font-family: 'Lexend',Arial, Helvetica, sans-serif;
+    font-size: large;
+    border-radius: 10px;
+}
+
+.opciones-items:hover, .container button:hover{
+    background-color: #e71829 !important;
+}
+
+.subtitulo-fin{
+    margin-top: 15px !important;
+}
+
+.container-form-fin{
+    background-color: #F5F5F5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-group label{
+    font-family: 'Lexend',Arial, Helvetica, sans-serif;
+}
+
+.form-group input, #pais{
+    font-family: 'Lexend',Arial, Helvetica, sans-serif;
+    margin-bottom: 15px;
+}
+
+.container button{
+    background-color: rgb(243, 99, 99) !important;
+    border-color: transparent !important;
+}
+
+/* media query para dispositivos moviles y tablets */
+@media (max-width: 1024px) {
+    /* navbar */
+    .navbar-principal .nav-links {
+        flex-direction: column; 
+        gap: 15px; 
+        align-items: center; 
+    }
+
+    .navbar-principal .nav-links a{ 
+        width: 100%;
+    }
+
+    #link-login {
+        margin-left: 0; 
+    }
+
+
+    /* main index */
+    .container-main {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .container-img-principal img{
+        border-radius: 10px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* footer */
+    footer p{
+        font-size: x-small;
+    }
+}
